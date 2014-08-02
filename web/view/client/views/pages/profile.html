@@ -1,0 +1,103 @@
+
+<div class="page page-profile">
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="panel panel-profile">
+                <div class="panel-heading text-center bg-info">
+                    <img alt="" src="images/g.jpg" class="img-circle img80_80">
+                    <h3>Alberto Hernandez</h3>
+                    <p>Project Manager</p>                    
+                </div>
+                
+            </div>
+
+            
+
+
+          
+        </div>
+        <div class="col-md-6">
+
+            
+            
+
+            <div class="panel panel-default">
+                <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Perfil Programador</strong></div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-body">
+                            <ul class="list-unstyled list-info">
+                                
+                                <li>
+                                    <span class="icon glyphicon glyphicon-envelope"></span>
+                                    <label>Email</label>
+                                    contacto@yumenet.com.mx
+                                </li>
+                                <li>
+                                    <span class="icon glyphicon glyphicon-home"></span>
+                                    <label>Direccion</label>
+                                    Estacas 125, Mexico, D.F.
+                                </li>
+                                
+                                <li>
+                                    <span class="icon glyphicon glyphicon-flag"></span>
+                                    <label>Nacionalidad</label>
+                                    Mexicano
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section data-ng-controller="chartCtrl">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Ancho de Banda</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="easypiechart.options" percent="easypiechart.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Espacio En Disco</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="easypiechart2.options" percent="easypiechart2.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart2.percent"></span>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Uso de CPU</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div easypiechart options="easypiechart3.options" percent="easypiechart3.percent" class="easypiechart">
+                            <span class="pie-percent" ng-bind="easypiechart3.percent"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </section>
+
+</div>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Censo">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="dbaa" password="M0m0l52g" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/dbaa" username="momo"/>
+</Context>

@@ -1,0 +1,2391 @@
+
+
+<section class="page-form-ele page">
+
+
+    <form class="form-horizontal" method="post" action="procesaBUS.jsp">
+
+    <!-- Input -->
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos de Familia</strong></div>
+        <div class="panel-body">
+            
+			
+			
+				<div class="form-group">
+				<label for="" class="col-sm-2">Datos </label>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtsector" class="form-control col-sm-3" placeholder="Sector"> 
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtfolio" class="form-control col-sm-3" placeholder="# Folio"> 
+                    </div>                     
+					<div class="col-sm-3">
+                        <input type="text" name="txtid" class="form-control col-sm-3" disabled value=localStorage.pagecount >
+                    </div>
+				
+                    
+					
+                </div>
+
+                <div class="form-group">
+				<label for="" class="col-sm-2">Datos Entrevistado</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtnombreentrev" class="form-control col-sm-3" placeholder="Nombre(s)"> 
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtapellidopaternoentrev" class="form-control col-sm-3" placeholder="Apellido Paterno"> 
+                    </div>                     
+					<div class="col-sm-3">
+                        <input type="text" name="txtapellidomaternoentrev" class="form-control col-sm-3" placeholder="Apellido Materno"> 
+                    </div>   
+				
+                    
+					
+                </div>
+				
+				
+				
+				 <div class="form-group">
+					<label for="" class="col-sm-2">Direccion</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtcalle" class="form-control col-sm-3" placeholder="Calle"> 
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtentre" class="form-control col-sm-3" placeholder="Entre"> 
+                    </div>                     
+					<div class="col-sm-3">
+                        <input type="text" name="txtdelegacion" class="form-control col-sm-3" placeholder="Delegacion"> 
+                    </div>   
+				
+                    
+					
+                </div>
+				
+				<div class="form-group">
+					<label for="" class="col-sm-2"></label>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtnumero" class="form-control col-sm-3" placeholder="Numero"> 
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="txtcolonia" class="form-control col-sm-3" placeholder="Colonia"> 
+                    </div>                     
+					<div class="col-sm-3">
+                        <input type="text" name="txttelefono" class="form-control col-sm-3" placeholder="Telefono"> 
+                    </div>   
+				
+                    
+					
+                </div>
+				
+				<div class="form-group">
+				<label for="" class="col-sm-2"></label>
+				<label for="" class="col-sm-1">Estado Civil</label>
+				<div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtestadocivilentre">
+								
+									<option name="txtestadocivilentre" value="Civil">Civil</option>
+									<option name="txtestadocivilentre" value="Iglesia">Iglesia</option>
+									<option name="txtestadocivilentre" value="Union Libre"> Union Libre</option>
+									<option name="txtestadocivilentre" value="Divorciado(a">Divorciado(a)</option>
+									<option name="txtestadocivilentre" value="Separado(a)">Separado(a)</option>
+									<option name="txtestadocivilentre" value="Viudo(a)">Viudo(a)</option>
+									<option name="txtestadocivilentre" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			
+				<label for="" class="col-sm-1">Escolaridad</label>
+				<div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtescolaridadentre">
+								
+									<option name="txtescolaridadentre" value="Primaria">Primaria</option>
+									<option name="txtescolaridadentre" value="Secundaria">Secundaria</option>
+									<option name="txtescolaridadentre" value="Preparatoria">Preparatoria</option>
+									<option name="txtescolaridadentre" value="Tecnica">Tecnica</option>
+									<option name="txtescolaridadentre" value="Licenciatura">Licenciatura</option>
+									<option name="txtescolaridadentre" value="Posgrado">Posgrado</option>
+									<option name="txtescolaridadentre" value="Ninguna">Ninguna</option>
+									<option name="txtescolaridadentre" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div>
+          
+                
+				 </div>
+				 
+				 
+				 
+				 <div class="form-group">
+				 <label for="" class="col-sm-2"></label>
+                         <label for="" class="col-sm-1">Ocupacion</label>
+							<div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="txtocupacionentre">
+								
+									<option name="txtocupacionentre" value="Albanil">Alba&ntilde;il</option>
+									<option name="txtocupacionentre" value="Oficio Propio">Oficio Propio</option>
+									<option name="txtocupacionentre" value="Comerciante">Comerciante</option>
+									<option name="txtocupacionentre" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="txtocupacionentre" value="Profesionista">Profesionista</option>
+									<option name="txtocupacionentre" value="Empleado Par.">Empleado Par.</option>
+									<option name="txtocupacionentre" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="txtocupacionentre" value="Ama de Casa">Ama de Casa</option>
+									<option name="txtocupacionentre" value="Estudiante">Estudiante</option>
+									<option name="txtocupacionentre" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div>
+					<label for="" class="col-sm-1">Religion</label>		
+							<div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtreligionentre">
+								
+									<option name="txtreligionentre" value="Catolica">Catolica</option>
+									<option name="txtreligionentre" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="txtreligionentre" value="Adventista">Adventista</option>
+									<option name="txtreligionentre" value="Mormones">Mormones</option>
+									<option name="txtreligionentre" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="txtreligionentre" value="Evangelista">Evangelista</option>
+									<option name="txtreligionentre" value="Otros">Otros</option>
+									<option name="txtreligionentre" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div>
+                </div>
+				 
+				 
+			    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Familiares</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ape. Pat.</th>
+                            <th>Ape. Mat.</th>
+                            <th>Nombre(s)</th>
+                            <th>Edad</th>
+                            <th>Parentesco</th>
+                            <th>Edo. Civil</th>
+							<th>Sexo</th>
+							<th>Trabaja</th>
+						
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P</td>
+                            <td><input type="text" name="txtfapellidopaterno" class="form-control col-sm-1" value="PApellido Paterno" placeholder="PApellido Paterno"> </td>
+                            <td><input type="text" name="txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtestadocivilentrev">
+                                                                         <option name="txtestadocivilentrev" value=""></option>   
+									<option name="txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                            
+                        <tr>
+                             <td>M</td>
+                            <td><input type="text" name="mtxtfapellidopaterno" class="form-control col-sm-1" value="MApellido Paterno" placeholder="MApellido Paterno"> </td>
+                            <td><input type="text" name="mtxtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="mtxtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="mtxtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="mtxtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="mtxtestadocivilentrev">
+                                                                        <option name="mtxtestadocivilentrev" value=""></option>
+									<option name="mtxtestadocivilentrev" value="Civil">Civil</option>
+									<option name="mtxtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="mtxtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="mtxtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="mtxtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="mtxtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="mtxtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="mtxtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="mtxttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="mtxttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                            
+                        </tr>
+                        <tr>
+                             <td>H1</td>
+                            <td><input type="text" name="h1txtfapellidopaterno" class="form-control col-sm-1" value="H1Apellido Paterno" placeholder="H1Apellido Paterno"> </td>
+                            <td><input type="text" name="h1txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h1txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h1txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h1txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h1txtestadocivilentrev">
+                                                                        <option name="h1txtestadocivilentrev" value=""></option>
+									<option name="h1txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h1txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h1txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h1txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h1txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h1txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h1txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h1txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h1txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h1txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>H2</td>
+                            <td><input type="text" name="h2txtfapellidopaterno" class="form-control col-sm-1" value="H2Apellido Paterno" placeholder="H2Apellido Paterno"> </td>
+                            <td><input type="text" name="h2txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h2txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h2txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h2txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h2txtestadocivilentrev">
+                                                                        <option name="h2txtestadocivilentrev" value=""></option>
+									<option name="h2txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h2txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h2txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h2txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h2txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h2txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h2txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h2txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h2txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h2txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>H3</td>
+                            <td><input type="text" name="h3txtfapellidopaterno" class="form-control col-sm-1" value="H3Apellido Paterno" placeholder="H3Apellido Paterno"> </td>
+                            <td><input type="text" name="h3txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h3txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h3txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h3txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h3txtestadocivilentrev">
+                                                                        <option name="h3txtestadocivilentrev" value=""></option>
+									<option name="h3txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h3txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h3txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h3txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h3txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h3txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h3txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h3txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h3txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h3txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>H4</td>
+                            <td><input type="text" name="h4txtfapellidopaterno" class="form-control col-sm-1" value="H4Apellido Paterno" placeholder="H4Apellido Paterno"> </td>
+                            <td><input type="text" name="h4txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h4txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h4txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h4txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h4txtestadocivilentrev">
+                                                                        <option name="h4txtestadocivilentrev" value=""></option>
+									<option name="h4txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h4txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h4txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h4txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h4txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h4txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h4txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h4txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h4txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h4txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>H5</td>
+                            <td><input type="text" name="h5txtfapellidopaterno" class="form-control col-sm-1" value="H5Apellido Paterno" placeholder="H5Apellido Paterno"> </td>
+                            <td><input type="text" name="h5txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h5txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h5txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h5txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h5txtestadocivilentrev">
+                                                                        <option name="h5txtestadocivilentrev" value=""></option>
+									<option name="h5txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h5txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h5txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h5txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h5txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h5txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h5txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h5txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h5txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h5txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>H6</td>
+                            <td><input type="text" name="h6txtfapellidopaterno" class="form-control col-sm-1" value="H6Apellido Paterno" placeholder="H6Apellido Paterno"> </td>
+                            <td><input type="text" name="h6txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="h6txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="h6txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="h6txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h6txtestadocivilentrev">
+                                                                        <option name="h6txtestadocivilentrev" value=""></option>
+									<option name="h6txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="h6txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="h6txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="h6txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="h6txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="h6txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="h6txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="h6txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="h6txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h6txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>O1</td>
+                            <td><input type="text" name="o1txtfapellidopaterno" class="form-control col-sm-1" value="O1Apellido Paterno" placeholder="O1Apellido Paterno"> </td>
+                            <td><input type="text" name="o1txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="o1txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="o1txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="o1txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o1txtestadocivilentrev">
+                                                                        <option name="o1txtestadocivilentrev" value=""></option>
+									<option name="o1txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="o1txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="o1txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="o1txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="o1txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="o1txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="o1txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="o1txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="o1txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o1txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>O2</td>
+                            <td><input type="text" name="o2txtfapellidopaterno" class="form-control col-sm-1" value="O2Apellido Paterno" placeholder="O2Apellido Paterno"> </td>
+                            <td><input type="text" name="o2txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="o2txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="o2txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="o2txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o2txtestadocivilentrev">
+                                                                        <option name="o2txtestadocivilentrev" value=""></option>
+									<option name="o2txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="o2txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="o2txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="o2txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="o2txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="o2txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="o2txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="o2txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="o2txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o2txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                        <tr>
+                             <td>O3</td>
+                            <td><input type="text" name="o3txtfapellidopaterno" class="form-control col-sm-1" value="O3Apellido Paterno" placeholder="O3Apellido Paterno"> </td>
+                            <td><input type="text" name="o3txtfapellidomaterno" class="form-control col-sm-1" placeholder="Apellido Materno"></td>
+                            <td><input type="text" name="o3txtfnombres" class="form-control col-sm-1" placeholder="Nombre(s)"></td>
+                            <td><input type="text" name="o3txtfedad" class="form-control" size="5" placeholder="Edad"></td>
+                            <td><input type="text" name="o3txtfparentesco" class="form-control" size="5" placeholder="Parentesco"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o3txtestadocivilentrev">
+                                                                        <option name="o3txtestadocivilentrev" value=""></option>
+									<option name="o3txtestadocivilentrev" value="Civil">Civil</option>
+									<option name="o3txtestadocivilentrev" value="Iglesia">Iglesia</option>
+									<option name="o3txtestadocivilentrev" value="Union Libre"> Union Libre</option>
+									<option name="o3txtestadocivilentrev" value="Divorciado(a">Divorciado(a)</option>
+									<option name="o3txtestadocivilentrev" value="Separado(a)">Separado(a)</option>
+									<option name="o3txtestadocivilentrev" value="Viudo(a)">Viudo(a)</option>
+									<option name="o3txtestadocivilentrev" value="Soltero(a)">Soltero(a)</option>
+								</select>
+							</span>
+				</div>			</td>
+							<td><input type="text" name="o3txtsexo" class="form-control" size="5" placeholder="Sexo"></td>
+                            <td><dd>
+								<label class="ui-radio"><input name="o3txttrabaja" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o3txttrabaja" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Familiares Ocupacion</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+							<th>Ocupacion</th>
+							<th>Ingreso Mensual</th>
+							<th>Religion</th>
+							<th>Escolaridad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="txtocupacionentrev">
+                                                                        <option name="txtocupacionentrev" value=""></option>
+									<option name="txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtreligionentrev">
+                                                                        <option name="txtreligionentrev" value=""></option>
+									<option name="txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="txtreligionentrev" value="Otros">Otros</option>
+									<option name="txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtescolaridadentrev">
+                                                                        <option name="txtescolaridadentrev" value=""></option>
+									<option name="txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="mtxtocupacionentrev">
+                                                                        <option name="mtxtocupacionentrev" value=""></option>
+									<option name="mtxtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="mtxtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="mtxtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="mtxtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="mtxtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="mtxtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="mtxtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="mtxtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="mtxtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="mtxtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="mtxtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="mtxtreligionentrev" value="">
+                                                                        <option name="mtxtreligionentrev" value=""></option>
+									<option name="mtxtreligionentrev" value="Catolica">Catolica</option>
+									<option name="mtxtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="mtxtreligionentrev" value="Adventista">Adventista</option>
+									<option name="mtxtreligionentrev" value="Mormones">Mormones</option>
+									<option name="mtxtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="mtxtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="mtxtreligionentrev" value="Otros">Otros</option>
+									<option name="mtxtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="mtxtescolaridadentrev">
+                                                                        <option name="mtxtescolaridadentrev" value=""></option>
+									<option name="mtxtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="mtxtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="mtxtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="mtxtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="mtxtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="mtxtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="mtxtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="mtxtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>H1</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h1txtocupacionentrev">
+                                                                        <option name="h1txtocupacionentrev" value=""></option>
+									<option name="h1txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h1txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h1txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h1txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h1txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h1txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h1txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h1txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h1txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h1txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h1txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h1txtreligionentrev">
+                                                                        <option name="h1txtreligionentrev" value=""></option>
+									<option name="h1txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h1txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h1txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h1txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h1txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h1txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h1txtreligionentrev" value="Otros">Otros</option>
+									<option name="h1txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h1txtescolaridadentrev">
+                                                                        <option name="h1txtescolaridadentrev" value=""></option>
+									<option name="h1txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h1txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h1txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h1txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h1txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h1txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h1txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h1txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>H2</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h2txtocupacionentrev">
+                                                                        <option name="h2txtocupacionentrev" value=""></option>
+									<option name="h2txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h2txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h2txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h2txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h2txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h2txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h2txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h2txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h2txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h2txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h2txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h2txtreligionentrev">
+                                                                        <option name="h2txtreligionentrev" value=""></option>
+									<option name="h2txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h2txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h2txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h2txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h2txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h2txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h2txtreligionentrev" value="Otros">Otros</option>
+									<option name="h2txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h2txtescolaridadentrev">
+                                                                        <option name="h2txtescolaridadentrev" value=""></option>
+									<option name="h2txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h2txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h2txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h2txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h2txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h2txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h2txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h2txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>H3</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h3txtocupacionentrev">
+                                                                        <option name="h3txtocupacionentrev" value=""></option>
+									<option name="h3txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h3txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h3txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h3txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h3txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h3txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h3txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h3txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h3txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h3txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h3txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h3txtreligionentrev">
+                                                                        <option name="h3txtreligionentrev" value=""></option>
+									<option name="h3txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h3txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h3txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h3txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h3txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h3txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h3txtreligionentrev" value="Otros">Otros</option>
+									<option name="h3txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h3txtescolaridadentrev">
+                                                                        <option name="h3txtescolaridadentrev" value=""></option>
+									<option name="h3txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h3txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h3txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h3txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h3txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h3txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h3txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h3txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>H4</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h4txtocupacionentrev">
+                                                                        <option name="h4txtocupacionentrev" value=""></option>
+									<option name="h4txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h4txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h4txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h4txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h4txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h4txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h4txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h4txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h4txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h4txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h4txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h4txtreligionentrev">
+                                                                        <option name="h4txtreligionentrev" value=""></option>
+									<option name="h4txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h4txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h4txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h4txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h4txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h4txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h4txtreligionentrev" value="Otros">Otros</option>
+									<option name="h4txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h4txtescolaridadentrev">
+                                                                        <option name="h4txtescolaridadentrev" value=""></option>
+									<option name="h4txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h4txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h4txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h4txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h4txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h4txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h4txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h4txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>H5</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h5txtocupacionentrev">
+                                                                        <option name="h5txtocupacionentrev" value=""></option>
+									<option name="h5txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h5txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h5txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h5txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h5txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h5txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h5txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h5txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h5txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h5txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h5txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h5txtreligionentrev">
+                                                                        <option name="h5txtreligionentrev" value=""></option>
+									<option name="h5txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h5txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h5txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h5txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h5txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h5txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h5txtreligionentrev" value="Otros">Otros</option>
+									<option name="h5txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h5txtescolaridadentrev">
+                                                                        <option name="h5txtescolaridadentrev" value=""></option>
+									<option name="h5txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h5txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h5txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h5txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h5txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h5txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h5txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h5txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>H6</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="h6txtocupacionentrev">
+                                                                        <option name="h6txtocupacionentrev" value=""></option>
+									<option name="h6txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="h6txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="h6txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="h6txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="h6txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="h6txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="h6txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="h6txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="h6txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="h6txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="h6txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h6txtreligionentrev">
+                                                                        <option name="h6txtreligionentrev" value=""></option>
+									<option name="h6txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="h6txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="h6txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="h6txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="h6txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="h6txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="h6txtreligionentrev" value="Otros">Otros</option>
+									<option name="h6txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="h6txtescolaridadentrev">
+                                                                        <option name="h6txtescolaridadentrev" value=""></option>
+									<option name="h6txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="h6txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="h6txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="h6txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="h6txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="h6txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="h6txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="h6txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>O1</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="o1txtocupacionentrev">
+                                                                        <option name="o1txtocupacionentrev" value=""></option>
+									<option name="o1txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="o1txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="o1txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="o1txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="o1txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="o1txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="o1txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="o1txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="o1txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="o1txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="o1txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o1txtreligionentrev">
+                                                                        <option name="o1txtreligionentrev" value=""></option>
+									<option name="o1txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="o1txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="o1txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="o1txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="o1txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="o1txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="o1txtreligionentrev" value="Otros">Otros</option>
+									<option name="o1txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o1txtescolaridadentrev">
+                                                                        <option name="o1txtescolaridadentrev" value=""></option>
+									<option name="o1txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="o1txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="o1txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="o1txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="o1txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="o1txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="o1txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="o1txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>O2</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="o2txtocupacionentrev">
+                                                                        <option name="o2txtocupacionentrev" value=""></option>
+									<option name="o2txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="o2txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="o2txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="o2txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="o2txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="o2txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="o2txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="o2txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="o2txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="o2txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="o2txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o2txtreligionentrev">
+                                                                        <option name="o2txtreligionentrev" value=""></option>
+									<option name="o2txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="o2txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="o2txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="o2txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="o2txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="o2txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="o2txtreligionentrev" value="Otros">Otros</option>
+									<option name="o2txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o2txtescolaridadentrev">
+                                                                        <option name="o2txtescolaridadentrev" value=""></option>
+									<option name="o2txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="o2txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="o2txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="o2txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="o2txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="o2txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="o2txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="o2txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            
+                            <td><div class="col-sm-3">
+							<span class="ui-select" >
+								<select name="o3txtocupacionentrev">
+                                                                        <option name="o3txtocupacionentrev" value=""></option>
+									<option name="o3txtocupacionentrev" value="Albanil">Alba&ntilde;il</option>
+									<option name="o3txtocupacionentrev" value="Oficio Propio">Oficio Propio</option>
+									<option name="o3txtocupacionentrev" value="Comerciante">Comerciante</option>
+									<option name="o3txtocupacionentrev" value="Empleado Fed.">Empleado Fed.</option>
+									<option name="o3txtocupacionentrev" value="Profesionista">Profesionista</option>
+									<option name="o3txtocupacionentrev" value="Empleado Par.">Empleado Par.</option>
+									<option name="o3txtocupacionentrev" value="Trabajadora Domestica">Trabajadora Domestica</option>
+									<option name="o3txtocupacionentrev" value="Ama de Casa">Ama de Casa</option>
+									<option name="o3txtocupacionentrev" value="Estudiante">Estudiante</option>
+									<option name="o3txtocupacionentrev" value="Otros">Otros</option>
+								</select>
+							</span>
+							</div></td>
+                            <td><input type="text" name="o3txtingreso" class="form-control" size="5" placeholder="Ingreso Mensual"></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o3txtreligionentrev">
+                                                                        <option name="o3txtreligionentrev" value=""></option>
+									<option name="o3txtreligionentrev" value="Catolica">Catolica</option>
+									<option name="o3txtreligionentrev" value="Tes. de Jehova">Tes. de Jehova</option>
+									<option name="o3txtreligionentrev" value="Adventista">Adventista</option>
+									<option name="o3txtreligionentrev" value="Mormones">Mormones</option>
+									<option name="o3txtreligionentrev" value="Luz del Mundo">Luz del Mundo</option>
+									<option name="o3txtreligionentrev" value="Evangelista">Evangelista</option>
+									<option name="o3txtreligionentrev" value="Otros">Otros</option>
+									<option name="o3txtreligionentrev" value="No Tiene">No Tiene</option>
+								</select>
+							</span>
+						</div></td>
+                            <td><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="o3txtescolaridadentrev">
+                                                                        <option name="o3txtescolaridadentrev" value=""></option>
+									<option name="o3txtescolaridadentrev" value="Primaria">Primaria</option>
+									<option name="o3txtescolaridadentrev" value="Secundaria">Secundaria</option>
+									<option name="o3txtescolaridadentrev" value="Preparatoria">Preparatoria</option>
+									<option name="o3txtescolaridadentrev" value="Tecnica">Tecnica</option>
+									<option name="o3txtescolaridadentrev" value="Licenciatura">Licenciatura</option>
+									<option name="o3txtescolaridadentrev" value="Posgrado">Posgrado</option>
+									<option name="o3txtescolaridadentrev" value="Ninguna">Ninguna</option>
+									<option name="o3txtescolaridadentrev" value="Kinder">Kinder</option>
+								</select>
+							</span>
+				</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+	
+	
+	<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Familiares - 3</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+							<th>Lugar Nacimiento</th>
+							<th>Sabe Artesania</th>
+							<th>Cual Artesania</th>
+							<th>Habla Dialecto</th>
+							<th>Cual Dialecto</th>
+							<th>Tiene Negocio</th>
+							<th>Cual Negocio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P</td>
+                            
+                            <td><input type="text" name="txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            
+                            <td><input type="text" name="mtxtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="mtxtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="mtxtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="mtxtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="mtxtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="mtxtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="mtxtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="mtxtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="mtxtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="mtxtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>H1</td>
+                            
+                            <td><input type="text" name="h1txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h1txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h1txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h1txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h1txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h1txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h1txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h1txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h1txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h1txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>H2</td>
+                            
+                            <td><input type="text" name="h2txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h2txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h2txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h2txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h2txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h2txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h2txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h2txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h2txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h2txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>H3</td>
+                            
+                            <td><input type="text" name="h3txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h3txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h3txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h3txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h3txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h3txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h3txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h3txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h3txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h3txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>H4</td>
+                            
+                            <td><input type="text" name="h4txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h4txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h4txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h4txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h4txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h4txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h4txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h4txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h4txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h4txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>H5</td>
+                            
+                            <td><input type="text" name="h5txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h5txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h5txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h5txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h5txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h5txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h5txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h5txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h5txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h5txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>H6</td>
+                            
+                            <td><input type="text" name="h6txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="h6txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="h6txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="h6txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="h6txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h6txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h6txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="h6txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="h6txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="h6txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>O1</td>
+                            
+                            <td><input type="text" name="o1txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="o1txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o1txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="o1txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="o1txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o1txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o1txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="o1txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o1txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o1txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>O2</td>
+                            
+                            <td><input type="text" name="o2txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="o2txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o2txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="o2txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="o2txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o2txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o2txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="o2txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o2txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o2txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                        <tr>
+                            <td>O3</td>
+                            
+                            <td><input type="text" name="o3txtnacimiento" class="form-control" size="5" placeholder="Lugar Nacimiento"></td>
+                            <td>
+							 <dd>
+								<label class="ui-radio"><input name="o3txtartesania" type="radio" value="Si" ><span>Si</span></label>
+								<label class="ui-radio"><input name="o3txtartesania" type="radio" value="No" checked><span>No</span></label>
+								
+							</dd>
+                
+            
+							</td>
+                            <td><input type="text" name="o3txtartesaniacual" class="form-control" size="5" placeholder="Cual Artesania"></td>
+                            <td><dd>
+									<label class="ui-radio"><input name="o3txtdialecto" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o3txtdialecto" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o3txtdialectocual" class="form-control" size="5" placeholder="Cual Dialecto"></td>
+							<td><dd>
+									<label class="ui-radio"><input name="o3txtnegocio" type="radio" value="Si" ><span>Si</span></label>
+									<label class="ui-radio"><input name="o3txtnegocio" type="radio" value="No" checked><span>No</span></label>
+									
+								</dd></td>
+							<td><input type="text" name="o3txtnegociocual" class="form-control" size="5" placeholder="Cual Negocio"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>	 
+            
+            
+            		<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Que Alimentos Hace al Dia</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+          
+                <dd>
+                    <label class="ui-checkbox"><input name="txtdesayuno" type="checkbox" checked value="Si" ><span>Desayuno</span></label>
+                    <input type="text" name="txtdesayunocual" class="form-control col-sm-1" size="5" placeholder="Que Alimento Fue">
+                    
+                </dd>
+                
+                <dd>
+                    <label class="ui-checkbox"><input name="txtcomida" type="checkbox" value="Si" checked><span>Comida</span></label>
+                    <input type="text" name="txtcomidacual" class="form-control col-sm-1" size="5" placeholder="Que Alimento Fue">
+                </dd>
+				
+				<dd>
+                    <label class="ui-checkbox"><input name="txtcena" type="checkbox" value="Si" checked><span>Cena</span></label>
+                    <input type="text" name="txtcenacual" class="form-control col-sm-1" size="5" placeholder="Que Alimento Fue">
+                </dd>
+				
+				<dd>
+                    <label class="ui-checkbox"><input name="txtcotros" type="checkbox" value="Si" checked><span>Otros</span></label>
+                    <input type="text" name="txtcotroscual" class="form-control col-sm-1" size="5" placeholder="Que Alimento Fue">
+                </dd>
+				<dd>
+				<label for="" class="col-sm-2">Observaciones</label>
+                   
+				 <input tooltip="Observaciones" name="txtobservacionescomida" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				 </dd>
+            </div>
+
+        </div>
+    </section>		 
+				 
+				 <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Vivienda</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+          <table class="table table-striped table-bordered">
+                    
+                        <tr>
+                <td>
+                    <label for="" >Tipo de Vivienda</label>
+				<center><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txttipovivienda">
+								
+									<option name="txttipovivienda" value="Casa Independiente">Casa Independiente</option>
+									<option name="txttipovivienda" value="Vivienda en Casa de Vecindad">Vivienda en Casa de Vecindad</option>
+									<option name="txttipovivienda" value="Choza o Cabana">Choza o Caba&ntilde;a</option>
+									<option name="txttipovivienda" value="Vivienda Improvisada">Vivienda Improvisada</option>
+									<option name="txttipovivienda" value="Local No Destinada Para Habitacion Humana">Local No Destinada Para Habitacion Humana</option>
+									<option  >Otro Especifique</option>
+									
+								</select>
+							</span>
+				</div>				
+				<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txttipovivienda" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div>	</center>
+                
+            </td>
+			
+                    </tr>
+                    
+                        <tr>
+						<td>
+				<label for="" >Material Predominante En Techos</label>
+				<center><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtmaterialtecho">
+								
+									<option name="txtmaterialtecho" value="Concreto Armado">Concreto Armado</option>
+									<option name="txtmaterialtecho" value="De Madera">De Madera</option>
+									<option name="txtmaterialtecho" value="De Lamina Galvanizada">De Lamina Galvanizada</option>
+									<option name="txtmaterialtecho" value="De Lamina de Carton">De Lamina de Carton</option>
+									<option name="txtmaterialtecho" value="De Lamina de Asbesto">De Lamina de Asbesto</option>
+									<option  >Otro Material Especifique</option>
+									
+								</select>
+							</span>
+				</div>				
+				<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtmaterialtecho" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+				<label for="" >Su Casa Es:</label>
+				<center><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtsucasa">
+								
+									<option name="txtsucasa" value="Propia">Propia</option>
+									<option name="txtsucasa" value="Rentada">Rentada</option>
+									<option name="txtsucasa" value="Propia Por Invasion">Propia Por Invasion</option>
+									<option name="txtsucasa" value="Propia Pagandola a Plazos">Propia Pagandola a Plazos</option>
+									<option name="txtsucasa" value="Cedida Por Centro de Trabajo">Cedida Por Centro de Trabajo</option>
+									<option name="txtsucasa" value="Cedida Por Otro Hogar o Institucion">Cedida Por Otro Hogar o Institucion</option>
+									<option>Otra Forma Especifique</option>
+									
+								</select>
+							</span>
+				</div>				
+				<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtsucasa" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>
+						</td>
+						</tr>
+						
+						
+						<tr>
+						<td>
+				<label for="" >El Material Predominante En Los Pisos:</label>
+				<center><div class="col-sm-3">
+                            <span class="ui-select" >
+								<select name="txtmaterialpisos">
+								
+									<option name="txtmaterialpisos" value="De Cemento">De Cemento</option>
+									<option name="txtmaterialpisos" value="De Tierra">De Tierra</option>
+									<option>Otro Material Especifique</option>
+									
+								</select>
+							</span>
+				</div>				
+				<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtmaterialpisos" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>
+						</td>
+						</tr>
+						
+						
+						
+						<tr>
+						<td>
+				<label for="" >El Material Predominante En Paredes Exteriores:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtmaterialparedes">
+								
+									<option name="txtmaterialparedes" value="Ladrillo O Bloque de Cemento">Ladrillo O Bloque de Cemento</option>
+									<option name="txtmaterialparedes" value="De Piedra">De Piedra</option>
+									<option name="txtmaterialparedes" value="De Lamina">De Lamina</option>
+									<option name="txtmaterialparedes" value="De Lamina de Asbesto">De Lamina de Asbesto</option>
+									<option name="txtmaterialparedes" value="De Lamina de Carton">De Lamina de Carton</option>
+									<option name="txtmaterialparedes" value="De Madera">De Madera</option>
+									<option name="txtmaterialparedes" value="De Lena">De Le&ntilde;a</option>
+									<option name="txtmaterialparedes" value="De Adobe">De Adobe</option>
+									
+									
+								</select>
+							</span>
+				</div>	</center>			
+				
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+				<label for="" >El Mobiliario Que Tiene En Su Casa Es:</label>
+				<br><br><br>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-2">Television</label><br>
+                           <label class="switch"><input type="checkbox" checked name="txttv" value="Si"><i></i></label>
+						   </div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Estereo</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtestereo" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">DVD</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txtdvd" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Estufa</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtestufa" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-2">Microondas</label><br>
+							<label class="switch switch-danger"><input type="checkbox" checked name="txtmicroondas" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Lavadora</label><br>
+							<label class="switch"><input type="checkbox" checked name="txtlavadora" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Refrigerador</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtrefrigerador" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Computadora</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txtcomputadora" value="Si"><i></i></label>
+							</div>
+				
+				
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+				<label for="" >La Vivienda Tiene Titulo de Propiedad</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txttitulopropiedad">
+								
+									<option name="txttitulopropiedad" value="Si">Si</option>
+									<option name="txttitulopropiedad" value="No">No</option>
+									<option name="txttitulopropiedad" value="Posesion">Posesion</option>
+									<option name="txttitulopropiedad" value="En Tramite">En Tramite</option>
+									<option name="txttitulopropiedad" value="Recibo de Compra-Venta">Recibo de Compra-Venta</option>
+									<option >Otro Especifique</option>
+									
+									
+									
+								</select>
+							</span>
+				</div>	<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txttitulopropiedad" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>			
+				
+						</td>
+						</tr>
+						
+						
+						<tr>
+						<td>
+				<label for="" >El Abastecimiento Del Agua En Su Hogar Proviene De:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtagua">
+								
+									<option name="txtagua" value="Red Publica Dentro De La Vivienda">Red Publica Dentro De La Vivienda</option>
+									<option name="txtagua" value="Red Publica Fuera De La Vivienda">Red Publica Fuera De La Vivienda</option>
+									<option name="txtagua" value="Pipas">Pipas</option>
+									<option name="txtagua" value="Rio, Manantial o Similar">Rio, Manantial o Similar</option>
+																
+									
+								</select>
+							</span>
+				</div>	</center>			
+				
+						</td>
+						</tr>
+						
+						
+						<tr>
+						<td>
+				<label for="" >Su Hogar Tiene:</label>
+				<br><br><br>
+							<div class="col-sm-1">
+							<label for="" >Tel. Fijo</label><br>
+                           <label class="switch"><input type="checkbox" checked name="txttelefonofijo" value="Si"><i></i></label>
+						   </div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Celular</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtcelular" value="Si"><i></i></label>
+							</div>
+							<div class="col-sm-1">			
+							<label for="" class="col-sm-2">Cuantos</label><br>
+							<input tooltip="Especifique Cuantos Celulares" name="txtcelularcuantos" type="text" class="form-control col-sm-2" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" >Tv Cable</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txttvcable" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Internet</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtinternet" value="Si"><i></i></label>
+							</div>
+							
+						</td>
+						</tr>
+						
+						
+						<tr>
+						<td>
+				<label for="" >Cual Es El Combustible Que Usa En Su Hogar Para Cocinar Sus Alimentos:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtcombustible">
+								
+									<option name="txtcombustible" value="Electricidad">Electricidad</option>
+									<option name="txtcombustible" value="Gas LP">Gas LP</option>
+									<option name="txtcombustible" value="Lena">Le&ntilde;a</option>
+									<option name="txtcombustible" value="Carbon">Carbon</option>
+									<option >Otro Especifique</option>							
+									
+								</select>
+							</span>
+				</div>	<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtcombustible" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>			
+				
+						</td>
+						</tr>
+						
+						
+						
+						<tr>
+						<td>
+				<label for="" >El Servicio Higienico Que Tiene Su Hogar Esta Conectado a:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtserviciohigienico">
+								
+									<option name="txtserviciohigienico" value="Drenaje Publico">Drenaje Publico</option>
+									<option name="txtserviciohigienico" value="Fosa Septica">Fosa Septica</option>
+									<option name="txtserviciohigienico" value="Letrina">Letrina</option>
+									<option name="txtserviciohigienico" value="Rio o Canal">Rio o Canal</option>
+									<option name="txtserviciohigienico" value="No Tiene">No Tiene</option>
+									
+								</select>
+							</span>
+				</div>	</center>			
+				
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+				<label for="" >El Servicio Electrico De Su Hogar Es:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtservicioelectrico">
+								
+									<option name="txtservicioelectrico" value="Con Medidor De Uso Exclusivo De La Vivienda">Con Medidor De Uso Exclusivo De La Vivienda</option>
+									<option name="txtservicioelectrico" value="Con Medidor De Uso Colectivo (Para Varias Viviendas)">Con Medidor De Uso Colectivo</option>
+									<option >Otro Especifique</option>
+									
+									
+								</select>
+							</span>
+				</div>	<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtservicioelectrico" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>			
+				
+						</td>
+						</tr>
+						
+						
+						
+						<tr>
+						<td>
+				<label for="" >Cual Es El Tipo De Alumbrado Que Tiene Su Hogar:</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txtalumbrado">
+								
+									<option name="txtalumbrado" value="Electricidad">Electricidad</option>
+									<option name="txtalumbrado" value="Lampara De Petroleo o Gas">Lampara De Petroleo o Gas</option>
+									<option name="txtalumbrado" value="Velas">Velas</option>
+									<option >Otro Especifique</option>
+									
+									
+								</select>
+							</span>
+				</div>	<div class="col-sm-5">			
+				<label for="" class="col-sm-2">Especifique</label>
+                <input tooltip="Especifique" name="txtalumbrado" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>			
+				
+						</td>
+						</tr>
+						
+						
+						<tr>
+						<td>
+				<label for="" >Tipo de Calle</label>
+				<center><div class="col-sm-4">
+                            <span class="ui-select" >
+								<select name="txttipocalle">
+								
+									<option name="txttipocalle" value="Andador">Andador</option>
+									<option name="txttipocalle" value="Escaleras">Escaleras</option>
+									<option name="txttipocalle" value="Calle">Calle</option>
+									<option name="txttipocalle" value="Avenida Principal">Avenida Principal</option>
+									
+									
+									
+								</select>
+							</span>
+				</div>	<div class="col-sm-5">			
+				<label for="" >De Que Material Son:</label>
+                <input tooltip="Especifique Material de Calle" name="txtmaterialcalle" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</div></center>			
+				
+						</td>
+						</tr>
+						
+						<tr>
+						<td>
+				<label for="" >Su Casa Tiene:</label>
+				<br><br><br>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Cocina</label><br>
+                           <label class="switch"><input type="checkbox" checked name="txtcocina" value="Si"><i></i></label>
+						   </div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Sala</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtsala" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Comedor</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txtcomedor" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-2">Recamaras</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtrecamara" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-2">
+							<label for="" >Ba&ntilde;o Completo</label><br>
+							<label class="switch switch-danger"><input type="checkbox" checked name="txtbanocompleto" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-2">
+							<label for="" >Cuarto Redondo</label><br>
+							<label class="switch"><input type="checkbox" checked name="txtcuartoredondo" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" >Medio Ba&ntilde;o</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtmediobano" value="Si"><i></i></label>
+							</div>
+							
+				
+				
+						</td>
+						</tr>
+						
+						
+					 </tbody>
+                </table>	
+				</div>		
+        </div>
+    </section>		
+				 
+			
+				
+				<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Salud</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+          <table class="table table-striped table-bordered">
+                    
+					
+					<tr>
+						<td>
+				<label for="" >Servicios Medicos Con Los Que Cuenta La Familia:</label>
+				<br><br><br>
+							<div class="col-sm-1">
+							<label for="" >IMSS</label><br>
+                           <label class="switch"><input type="checkbox" checked name="txtimss" value="Si"><i></i></label>
+						   </div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">ISSSTE</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtissste" value="Si"><i></i></label>
+							</div>
+							
+							<div class="space"></div>
+							<div class="col-sm-2">
+							<label for="" >Centro de Salud</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txtcentrosalud" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for=""  >Dispensario</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtdispensario" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div><div class="space"></div>
+							<div class="col-sm-3">			
+							<label for="" align="center">      Otro</label><br>
+							<input tooltip="Especifique Otro Servico de Salud" name="txtotromedico" type="text" class="form-control col-sm-2" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+							</div>
+							<div class="col-sm-2">			
+							<label for="" >Cuantas Veces Asiste Al Medico</label>
+							<input tooltip="Especifique Cuantas Veces Asiste Al Medico" name="txtmedicoveces" type="text" class="form-control col-sm-2" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+							</div>
+						</td>
+						</tr>
+						
+					
+					
+					
+					<tr>
+						<td>
+				<label for="" >Enfermedades Frecuentes En La Familia:</label>
+				<br><br><br>
+							<div class="col-sm-1">
+							<label for="" >Respiratorias</label><br>
+                           <label class="switch"><input type="checkbox" checked name="txtrespiratorias" value="Si"><i></i></label>
+						   </div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" >GastroIntest.</label><br>
+							<label class="switch switch-success"><input type="checkbox" checked name="txtgastro" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							
+							<div class="col-sm-1">
+							<label for="" >Dermatologicas</label><br>
+							<label class="switch switch-info"><input type="checkbox" checked name="txtderma" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Obesidad</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtobesidad" value="Si"><i></i></label>
+							</div>
+							<div class="space"></div>
+							<div class="col-sm-1">
+							<label for="" class="col-sm-1">Otras</label><br>
+							<label class="switch switch-warning"><input type="checkbox" checked name="txtotrasenfermedades" value="Si"><i></i></label>
+							</div>
+							
+						</td>
+						</tr>
+						
+					
+					
+					
+					 				
+						
+					 </tbody>
+                </table>	
+				</div>		
+        </div>
+    </section>	
+				
+				
+			<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Datos Salud Enfermedades</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Clase Enfermedad</th>
+                            <th>Nombre Enfermedad</th>
+                            <th>Quien La Padece</th>
+                            
+						
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                            <span class="ui-select" >
+								<select name="txtclaseenferm1">
+								    <option name="txtclaseenferm1" value=""></option>
+									<option name="txtclaseenferm1" value="Respiratoria">Respiratoria</option>
+									<option name="txtclaseenferm1" value="Gastrointestinal">Gastrointestinal</option>
+									<option name="txtclaseenferm1" value="Dermatologica">Dermatologica</option>
+									<option name="txtclaseenferm1" value="Obesidad">Obesidad</option>
+									<option name="txtclaseenferm1" value="Otras">Otras</option>
+									
+									
+								</select>
+							</span>
+				</td>
+                            <td>			
+				<label for="" class="col-sm-2">Cuales</label>
+                <input tooltip="Especifique Cual Enfermedad" name="txtcualenfermedad1" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+					</td>
+                            <td>			
+				<label for="" >Quien La Padece</label>
+                <input tooltip="Especifique Quien La Padece" name="txtquienpadece1" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            
+                            
+                        <tr>
+                            <td>
+                            <span class="ui-select" >
+								<select name="txtclaseenferm2">
+								<option name="txtclaseenferm2" value=""></option>
+									<option name="txtclaseenferm2" value="Respiratoria">Respiratoria</option>
+									<option name="txtclaseenferm2" value="Gastrointestinal">Gastrointestinal</option>
+									<option name="txtclaseenferm2" value="Dermatologica">Dermatologica</option>
+									<option name="txtclaseenferm2" value="Obesidad">Obesidad</option>
+									<option name="txtclaseenferm2" value="Otras">Otras</option>
+									
+									
+								</select>
+							</span>
+				</td>
+                            <td>			
+				<label for="" class="col-sm-2">Cuales</label>
+                <input tooltip="Especifique Cual Enfermedad" name="txtcualenfermedad2" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+					</td>
+                            <td>			
+				<label for="" >Quien La Padece</label>
+                <input tooltip="Especifique Quien La Padece" name="txtquienpadece2" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                            <span class="ui-select" >
+								<select name="txtclaseenferm3">
+								<option name="txtclaseenferm3" value=""></option>
+									<option name="txtclaseenferm3" value="Respiratoria">Respiratoria</option>
+									<option name="txtclaseenferm3" value="Gastrointestinal">Gastrointestinal</option>
+									<option name="txtclaseenferm3" value="Dermatologica">Dermatologica</option>
+									<option name="txtclaseenferm3" value="Obesidad">Obesidad</option>
+									<option name="txtclaseenferm3" value="Otras">Otras</option>
+									
+									
+								</select>
+							</span>
+				</td>
+                            <td>			
+				<label for="" class="col-sm-2">Cuales</label>
+                <input tooltip="Especifique Cual Enfermedad" name="txtcualenfermedad3" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            <td>		
+				<label for="" >Quien La Padece</label>
+                <input tooltip="Especifique Quien La Padece" name="txtquienpadece3" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                            <span class="ui-select" >
+								<select name="txtclaseenferm4">
+								<option name="txtclaseenferm4" value=""></option>
+									<option name="txtclaseenferm4" value="Respiratoria">Respiratoria</option>
+									<option name="txtclaseenferm4" value="Gastrointestinal">Gastrointestinal</option>
+									<option name="txtclaseenferm4" value="Dermatologica">Dermatologica</option>
+									<option name="txtclaseenferm4" value="Obesidad">Obesidad</option>
+									<option name="txtclaseenferm4" value="Otras">Otras</option>
+									
+									
+								</select>
+							</span>
+				</td>
+                            <td>		
+				<label for="" class="col-sm-2">Cuales</label>
+                <input tooltip="Especifique Cual Enfermedad" name="txtcualenfermedad4" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+					</td>
+                            <td>		
+				<label for="" >Quien La Padece</label>
+                <input tooltip="Especifique Quien La Padece" name="txtquienpadece4" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            
+                        </tr>
+						<tr>
+                            <td>
+                            <span class="ui-select" >
+								<select name="txtclaseenferm5">
+								<option name="txtclaseenferm5" value=""></option>
+									<option name="txtclaseenferm5" value="Respiratoria">Respiratoria</option>
+									<option name="txtclaseenferm5" value="Gastrointestinal">Gastrointestinal</option>
+									<option name="txtclaseenferm5" value="Dermatologica">Dermatologica</option>
+									<option name="txtclaseenferm5" value="Obesidad">Obesidad</option>
+									<option name="txtclaseenferm5" value="Otras">Otras</option>
+									
+									
+								</select>
+							</span>
+				</td>
+                            <td>		
+				<label for="" class="col-sm-2">Cuales</label>
+                <input tooltip="Especifique Cual Enfermedad" name="txtcualenfermedad5" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            <td>		
+				<label for="" >Quien La Padece</label>
+                <input tooltip="Especifique Quien La Padece" name="txtquienpadece5" type="text" class="form-control" data-toggle="tooltip" data-placement="top" tooltip-trigger="focus">
+				
+				</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>	
+				
+				
+				
+				
+				
+			<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Necesidad Especial, Salud o Discapacidad (Enfermedad Cronica) - Paciente 1</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Enfermedad o Discapacidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtenfermedadpaciente1" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Nombre de Quien la Padece</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtquienpadecepaciente1" class="form-control input-success">
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Generales Del Caso</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionespaciente1" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>	
+				
+				<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Necesidad Especial, Salud o Discapacidad (Enfermedad Cronica) - Paciente 2</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Enfermedad o Discapacidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtenfermedadpaciente2" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Nombre de Quien la Padece</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtquienpadecepaciente2" class="form-control input-success">
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Generales Del Caso</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionespaciente2" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>	
+				
+			<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Necesidad Especial, Salud o Discapacidad (Enfermedad Cronica) - Paciente 3</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Enfermedad o Discapacidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtenfermedadpaciente3" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Nombre de Quien la Padece</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtquienpadecepaciente3" class="form-control input-success">
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Generales Del Caso</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionespaciente3" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>		
+			
+
+<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Necesidad Especial, Salud o Discapacidad (Enfermedad Cronica) - Paciente 4</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Enfermedad o Discapacidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtenfermedadpaciente4" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Nombre de Quien la Padece</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtquienpadecepaciente4" class="form-control input-success">
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Generales Del Caso</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionespaciente4" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>	
+			
+		
+
+<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Necesidad Especial, Salud o Discapacidad (Enfermedad Cronica) - Paciente 5</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Enfermedad o Discapacidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtenfermedadpaciente5" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Nombre de Quien la Padece</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtquienpadecepaciente5" class="form-control input-success">
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Generales Del Caso</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionespaciente5" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>			
+				
+			
+<section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>Problemas sociales, Urbanos, Familiares</strong></div>
+        <div class="panel-body">
+
+            <div class="table-responsive">
+                
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Problemas Sociales</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtproblemasocial" class="form-control input-info">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2">Problemas Urbanos</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtproblemaurbano" class="form-control input-success">
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Problemas Familiares</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="txtproblemafamiliar" class="form-control input-info">
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="" class="col-sm-2">Observaciones Del Entrevistador</label>
+                    <div class="col-sm-10">
+                        <textarea name="txtobservacionesentrev" id="" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+				
+          	
+			</div>		
+        </div>
+    </section>				
+				
+			 <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Aplicador</strong></div>
+        <div class="panel-body" data-ng-controller="DatepickerDemoCtrl">
+            <div class="row">
+                <div class="col-sm-4">
+				<label for="" >Fecha de Aplicacion</label>
+                    <div class="input-group ui-datepicker">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input name="txtfecha" type="text" 
+                               class="form-control"
+                               datepicker-popup="{{format}}"
+                               ng-model="dt"
+                               is-open="opened"
+                               min="minDate"
+                               max="'2015-06-22'"
+                               datepicker-options="dateOptions" 
+                               date-disabled="disabled(date, mode)"
+                               ng-required="true" 
+                               close-text="Close">
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-8">
+                    <label for="" class="col-sm-2">Nombre Del Aplicador</label>
+                    <div class="col-sm-6">
+                        <input type="text" name="txtaplicador" class="form-control input-info">
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>	
+				
+				
+            
+            
+            
+				<div class="form-group">
+                            <center> <button type="submit" name="enviar"  value="Enviar" class="btn btn-success btn-lg" id="submit">Guardar</button></center>
+                </div>
+				
+				
+ </form>
+</section>
